@@ -1,0 +1,69 @@
+* {
+  preenchimento :  0 ;
+  margem :  0 ;
+  box-sizing : border-box;
+}
+
+. invólucro {
+  cor de fundo :  rgb ( 67 ,  85 ,  111 );
+  largura :  100 % ;
+  altura :  100 vh ;
+  exibição : flexível;
+  justificar-conteúdo : centro;
+  align-items : centro;
+}
+
+. caixa de seleção {
+  altura :  100px ; _
+  largura :  100px ; _
+  exibição : flexível;
+  justificar-conteúdo : centro;
+  posição : relativa;
+  cursor : ponteiro;
+}
+
+. caixa de seleção . rastrear {
+  largura :  90px ; _
+  altura :  8px ; _
+  cor de fundo : branco;
+  posição : absoluta;
+  raio da borda :  4 px ;
+  transição :  0,5 s facilidade de entrada e saída;
+}
+
+. caixa de seleção . trace : enésimo filho ( 1 ) {
+  topo :  26px ; _
+  transformar :  girar ( 0 );
+}
+
+. caixa de seleção . trace : enésimo filho ( 2 ) {
+  topo :  46px ; _
+  transformar :  girar ( 0 );
+}
+
+. caixa de seleção . trace : enésimo filho ( 3 ) {
+  topo :  66 px ;
+  transformar :  girar ( 0 );
+}
+
+# alternar {
+  exibição : nenhum;
+}
+
+# alternar : verificado  + . caixa de seleção . trace : enésimo filho ( 1 ) {
+  transformar :  girar ( 45 graus );
+  topo :  47px ; _
+}
+
+# alternar : verificado  + . caixa de seleção . trace : enésimo filho ( 2 ) {
+  transform :  translateX ( -100 px );
+  largura :  30px ; _
+  visibilidade : oculto;
+  topo :  47px ; _
+  opacidade :  0 ;
+}
+
+# alternar : verificado  + . caixa de seleção . trace : enésimo filho ( 3 ) {
+  transformar :  girar ( -45 graus );
+  topo :  47px ; _
+}
